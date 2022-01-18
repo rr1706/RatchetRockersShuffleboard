@@ -1,0 +1,18 @@
+// Apply the java plugin to add support for Java
+apply plugin: 'java'
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    mavenCentral()
+    maven{ url "https://frcmaven.wpi.edu:443/artifactory/release" }
+   
+    // Use 'jcenter' for resolving your dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    jcenter()
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+    compileOnly 'edu.wpi.first.shuffleboard:api:2020.+'
+    compileOnly 'edu.wpi.first.shuffleboard.plugin:networktables:2020.+'
+}
