@@ -1,6 +1,6 @@
 plugins {
-    id 'java-library'
-    id 'java'
+    id("org.jetbrains.kotlin.jvm") version "1.5.31" 
+    id("java-library")
 }
 
 repositories {
@@ -12,7 +12,12 @@ repositories {
 }
 
 dependencies {
-    compileOnly group: "edu.wpi.first.shuffleboard", name: "api", version: "2022.2.1"
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom")) 
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8") 
+    testImplementation("org.jetbrains.kotlin:kotlin-test") 
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
+    
+    compileOnly(group: "edu.wpi.first.shuffleboard", name: "api", version: "2022.2.1")
 }
 
 tasks.register("installPlugin", Copy) {
