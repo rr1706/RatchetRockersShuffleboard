@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.VBox?>
 <VBox 
     xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" 
-    fx:controller="frc.rr1706.widgets.UDPCameraViewerWidget" fx:id="root" spacing="4">
+    fx:controller="frc.rr1706.widgets.ImageDisplayWidget" fx:id="root" spacing="4">
     <padding>
         <!-- Keep a 4 pixel buffer around the widget to avoid it from feeling cramped -->
         <Insets topRightBottomLeft="4"/>
