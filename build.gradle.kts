@@ -21,7 +21,7 @@ dependencies {
 }
 
 tasks.register("installPlugin", Copy) {
-    from(tasks.named("jar"))
+    from(tasks.named("jar")) // dependsOn() maybe
     into("${System.getProperty("user.home")}/Shuffleboard/plugins")
     description = "Builds the plugin JAR and installs it in the Shuffleboard plugins directory."
     group = "Shuffleboard Plugin"
