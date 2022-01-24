@@ -2,17 +2,6 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "java",
-			"targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
-			"elements": [
-				"${compileOutput}",
-				"${dependencies}"
-			],
-			"problemMatcher": [],
-			"label": "export",
-			"group": "build"
-		},
-		{
 			"type": "gradle",
 			"id": "c:\\Users\\emers\\Documents\\GitHub\\RatchetRockersShuffleboardbuildRatchetRockersShuffleboard",
 			"script": "build",
@@ -22,7 +11,7 @@
 				"isDefault": true
 			},
 			"project": "RatchetRockersShuffleboard",
-			"buildFile": "C:\\Users\\emers\\Documents\\GitHub\\RatchetRockersShuffleboard\\build.gradle",
+			"buildFile": "C:\\Users\\emers\\Documents\\GitHub\\RatchetRockersShuffleboard\\build.gradle.kts",
 			"rootProject": "RatchetRockersShuffleboard",
 			"projectFolder": "c:\\Users\\emers\\Documents\\GitHub\\RatchetRockersShuffleboard",
 			"workspaceFolder": "c:\\Users\\emers\\Documents\\GitHub\\RatchetRockersShuffleboard",
@@ -32,6 +21,23 @@
 				"$gradle"
 			],
 			"label": "gradle: build"
+		},
+		{
+			"type": "gradle",
+			"id": "c:\\Users\\emers\\Documents\\GitHub\\RatchetRockersShuffleboardbuildRatchetRockersShuffleboard",
+			"script": "installPlugin",
+			"description": "Moves plugin jar to ~/Shuffleboard/plugins.",
+			"project": "RatchetRockersShuffleboard",
+			"buildFile": "C:\\Users\\emers\\Documents\\GitHub\\RatchetRockersShuffleboard\\build.gradle.kts",
+			"rootProject": "RatchetRockersShuffleboard",
+			"projectFolder": "c:\\Users\\emers\\Documents\\GitHub\\RatchetRockersShuffleboard",
+			"workspaceFolder": "c:\\Users\\emers\\Documents\\GitHub\\RatchetRockersShuffleboard",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "gradle: installPlugin"
 		}
 	]
 }
