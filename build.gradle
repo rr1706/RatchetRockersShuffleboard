@@ -11,12 +11,12 @@ repositories {
 }
 
 dependencies {
-    compileOnly "edu.wpi.first.shuffleboard:api:2022.2.1"
+    compileOnly group: "edu.wpi.first.shuffleboard", name: "api", version: "2020.3.2"
 }
 
 tasks.register("installPlugin", Copy) {
-    from tasks.named("jar") // dependsOn() maybe
-    into "${System.getProperty("user.home")}/Shuffleboard/plugins"
+    from(tasks.named("jar"))
+    into("${System.getProperty("user.home")}/Shuffleboard/plugins")
     description = "Builds the plugin JAR and installs it in the Shuffleboard plugins directory."
     group = "Shuffleboard Plugin"
 }
